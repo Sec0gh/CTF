@@ -20,7 +20,7 @@
 ![Gunhhead_shell_exec.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhhead_shell_exec.png)
 - During accessing the shell, it needs to assign the current commands to start with a slash `/`. 
 
-![Gunhead_help.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead.png)
+![Gunhead_help.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead_help.png)
 - By injecting with your commands, you will reach the flag like the following commands.
 ```
 > /ping -c 3 127.0.0.1 || id
@@ -40,7 +40,7 @@ HTB{4lw4y5_54n1t1z3_u53r_1nput!!!}
 ## Drobots - very easy
 - When access the web challenge, You will find a login page.
 
-![drobots_login.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_bypass.png)
+![drobots_login.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_login.png)
 - And with some source code reviewing, you will find the `database.py` file contains a `login()` function to authenticate with the user credentials, but it doesn't sanitize the inputs from the user.
 
 ![drobots_database.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_database.png)
@@ -75,7 +75,15 @@ HTB{4lw4y5_54n1t1z3_u53r_1nput!!!}
 > The mutations in graphQL are the operations used to make changes to data on the server.
 
 ```
-{"query":"{__schema{types{name,fields{name}}}}","variables":{"recType":"Web","recAddr":"test","recUser":"test","recPass":"test","recNote":"test"}}
+{"query":"{__schema{types{name,fields{name}}}}",
+"variables":{
+"recType":"Web",
+"recAddr":"test",
+"recUser":"test",
+"recPass":"test",
+"recNote":"test"
+ }
+}
 ```
 
 ![passman_schema.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/passman_schema.png)
