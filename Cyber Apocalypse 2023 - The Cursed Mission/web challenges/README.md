@@ -216,7 +216,7 @@ Session completed.
 ![paddle_AddDelete.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/paddle_AddDelete.png)
 
 ![paddle_cart.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/paddle_cart.png)
-- During navigating in the attached files with the challenges, I found the application work with `node.js` as a back-end and it use a `jsrender` template, and I thought when I add any product in the cart it will render any `PoC` to be an `SSTI` vulnerability, but I falled in my fault because there is nothing to be rendered in the cart table when I add the item `id`.
+- During navigating in the attached files with the challenge, I found the application work with `node.js` as a back-end and it use a `jsrender` template, and I thought when I add any product in the cart it will render any `PoC` to be an `SSTI` vulnerability, but I falled in my fault because there is nothing to be rendered in the cart table when I add the item `id`.
 
 ![paddle_notSSTI.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/paddle_notSSTI.png)
 - There is nothing the `id` value sends to render in the `jsrender` template of the `index.jsrender` file.
