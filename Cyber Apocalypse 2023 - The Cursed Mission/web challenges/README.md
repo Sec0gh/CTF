@@ -4,7 +4,7 @@
 ![source_invalid.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/source_invalid.png)
 - At the source code, there is a correct pin is disclosed.
 
-![Source_correctPin.png]([Source](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Source_correctPin.png "Source_correctPin.png"))
+![Source_correctPin.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Source_correctPin.png)
 - By entering the correct pin the flag will appear.
 
 ![source_flag.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/source_flag.png)
@@ -14,13 +14,13 @@
 - When accessing the challenge, this page appears.
 - With a little of bit interaction with the events on the page, you will find a command shell on the side.
 
-![Gunhead.png]([Gunhead](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead.png "Gunhead.png"))
+![Gunhead.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead.png)
  - During Checking the included files with the challenge, you will find an intetrsting source code in `ReconModel.php` Implies with os command injection vulnerability using `shell_exec()` function without sanitizing the user input.
  
 ![Gunhhead_shell_exec.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhhead_shell_exec.png)
 - During accessing the shell, it needs to assign the current commands to start with a slash `/`. 
 
-![Gunhead_help.png]([Gunhead](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead.png "Gunhead.png"))
+![Gunhead_help.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/Gunhead.png)
 - By injecting with your commands, you will reach the flag like the following commands.
 ```
 > /ping -c 3 127.0.0.1 || id
@@ -40,7 +40,7 @@ HTB{4lw4y5_54n1t1z3_u53r_1nput!!!}
 ## Drobots - very easy
 - When access the web challenge, You will find a login page.
 
-![drobots_login.png]([drobots](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_bypass.png "drobots_bypass.png"))
+![drobots_login.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_bypass.png)
 - And with some source code reviewing, you will find the `database.py` file contains a `login()` function to authenticate with the user credentials, but it doesn't sanitize the inputs from the user.
 
 ![drobots_database.png](https://github.com/Sec0gh/CTF/blob/main/Cyber%20Apocalypse%202023%20-%20The%20Cursed%20Mission/Web%20images/drobots_database.png)
